@@ -14,7 +14,9 @@
   "description": "",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "nodemon": "^2.0.15",
     "sass": "^1.45.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.5"
