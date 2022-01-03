@@ -1,6 +1,6 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
-
+import { handleAPI } from './js/handleAPI'
 import './styles/resets.scss'
 import './styles/base.scss'
 import './styles/form.scss'
@@ -15,5 +15,6 @@ console.log("CHANGE!!");
 
 export {
     checkForName,
-    handleSubmit
+    handleSubmit,
+    handleAPI
    }

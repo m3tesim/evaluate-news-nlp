@@ -1,5 +1,5 @@
 {
-  "name": "example-project",
+  "name": "evaluate-news-nlp",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,9 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "Alaa Sayed",
+  "author": "Moatasem",
   "license": "ISC",
-  "description": "",
+  "description": "Evaluate a news article with Natural Language Processing",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "dotenv": "^10.0.0",
