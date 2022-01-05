@@ -1,7 +1,6 @@
 
 var path = require('path')
 const express = require('express')
-const mockAPIResponse = require('./mockAPI.js')
 var FormData = require('form-data');
 var fetch = require('node-fetch');
 

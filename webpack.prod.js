@@ -1,10 +1,15 @@
 const path = require('path')
 const webpack = require('webpack')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
     entry: './src/client/index.js',
     mode: 'production',
+    optimization: {
+        minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    },
     output: {
         libraryTarget: 'var',
         library: 'Client'
@@ -22,7 +27,12 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
+                loader: 'file-loader',
+                options:{
+                    name:'[name].[hash:6].[ext]',
+                    
+
+                }
               },
         ]
     },

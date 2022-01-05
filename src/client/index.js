@@ -7,10 +7,6 @@ import './styles/footer.scss'
 import './styles/header.scss'
 import nlp from '../assets/nlp.png';
 
-console.log(checkForName);
-
-alert("I EXIST")
-console.log("CHANGE!!");
 
 
   // Add the image to our existing div.
