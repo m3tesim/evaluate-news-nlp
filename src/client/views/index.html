@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        
         <meta charset="utf-8">
         <title>Test</title>
         <link rel="stylesheet" href="/styles/resets.css">
@@ -12,32 +13,49 @@
 
     <body>
 
-        <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-            </div>
+        <header id ="logo" class="logo" >
+                   
         </header>
 
         <main>
-            <section>
+          
+            
+            <section >
+              
+                <div class="title-text">
+                <h2>Evaluate news articles with Natural Language Processing
+
+                </h2>
+                <p>All you have to do is put the link of the article you want to evaluate below</p>
+                <p>   and click evaluate ,,,</p>
+                
+
+            </div>
+
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value=""  placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input" value=""  placeholder="url">
+                    <input class="btn" type="submit" name="" value="Evaluate" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <div id="warning"></div>
+
                 </form>
             </section>
 
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
-            </section>
+            <section >
+                <div>
+                <strong>Evaluation Results:</strong>
+            </div>
+                <br>
+
+                <div>
+                <div id="agreement"></div>
+                <div id="subjectivity"></div>
+                <div id="confidence"> </div>
+                <div id="irony"> </div>
+            </div>
+            </section> 
         </main>
 
-        <footer>
-            <p>This is a footer</p>
-        </footer>
+    
 
     </body>
 </html>

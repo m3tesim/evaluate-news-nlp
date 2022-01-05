@@ -22,7 +22,19 @@ module.exports = {
                 test: '/\.js$/',
                 exclude: /node_modules/,
                 loader: "babel-loader"
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                loader: 'file-loader',
+                option:{
+                    name:'[name].[hash:6].[ext]',
+                    outPath:'assets',
+                    publicPath:'assets',
+                    emitFile:true,
+                    esModule:false
+
+                }
+              },
         ]
     },
     plugins: [
